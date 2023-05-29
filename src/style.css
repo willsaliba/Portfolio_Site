@@ -1,10 +1,46 @@
-.top_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
+
+body {
+  background-image: url('images/falls.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Courier Prime', Courier, monospace;
 }
 
-.child {
-  color:aqua;
+
+/* Home Section Header */
+.top_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sit_left {
+  position: absolute;  
+  top: .5em;  
+  left: .5em;  
+  width: 4em;  
+  border-radius: 3px;
+}
+
+.sit_right {
+  position: absolute;  
+  top: .5em;  
+  right: 2em;  
+  list-style-type: none;
+}
+
+.sit_right li {
+  display: inline-block;
+  padding-left: 4em;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
