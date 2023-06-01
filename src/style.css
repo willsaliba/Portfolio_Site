@@ -13,7 +13,7 @@ a {
 .normal_section {
   background-color: #202020;
   height: 100vh;
-  margin-top: 0;
+  
   color: white;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,6 @@ h1, h2, h3, body {
   justify-content: space-around;
   align-items: center;
 }
-
 
 /* Animated Underline */
 *,
@@ -164,7 +163,7 @@ h1, h2, h3, body {
   width: 95%;
   height: 30%;
   position: absolute;
-  bottom: 2vh; 
+  bottom: 1.5vh; 
 }
 
 .abt_me_img {
