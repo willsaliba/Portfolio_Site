@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Will Saliba</title>
-				<link rel="shortcut icon" type="x-icon" href="src/images/ws.png">
-        <link rel="stylesheet" type="text/css" href="src/style.css">
-    </head>
-    
-    <body>
+<head>
+	<title>Will Saliba</title>
+	<link rel="shortcut icon" type="x-icon" href="src/images/ws.png">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
 
-			<!--Section1: Homepage-->
-			<section class="home_page">
-				
-				<!--Logo, Resume, Linkedin, Github-->
-				<div class="top_container" >
-					<img id="logoImage" class="logo" src="src/images/ws.png" alt="WS">
-					<nav class="sit_right">
-						<a class="underline" href="#">Resume</a>
-						<a class="underline" href="https://linkedin.com/in/willsaliba1">LinkedIn</a>
-						<a class="underline" href="https://github.com/willsaliba">Github</a>
-					</nav>
-				</div>
+<body>
 
-				<!--Name and Sub Heading-->
-				<div class="mid_container">
-					<div class="cloud">
-						<h1 style="font-size: 7rem;" >WILL SALIBA</h1>
-					</div>
-					<h3 style="font-size: 2rem;">Penultimate Computer Science Student</h3>
-				</div>
+	
+	<!--Section1: Homepage-->
+	<div id="home" class="home_page">
+		
+		<!--Logo, Resume, Linkedin, Github-->
+		<div class="top_container" >
+			<img id="logo" class="logo" src="src/images/ws.png" alt="WS">
+			<nav class="sit_right">
+				<a class="underline" href="#">Resume</a>
+				<a class="underline" href="https://linkedin.com/in/willsaliba1">LinkedIn</a>
+				<a class="underline" href="https://github.com/willsaliba">Github</a>
+			</nav>
+		</div>
 
-				<!--Section Shortcuts-->
-				<div class="bot_container">
-					<div class="section_shortcuts">
-						<h2 class="underline W_underline" >About Me</h2>
-						<h2 class="underline W_underline" >Projects</h2>
-						<h2 class="underline W_underline" >Skills</h2>
-						<h2 class="underline W_underline" >Contact Me</h2>
-					</div>
-				</div>
-				
-			</section>
+		<!--Name and Sub Heading-->
+		<div class="mid_container">
+			<div class="cloud">
+				<h1 style="font-size: 7rem;" >WILL SALIBA</h1>
+			</div>
+			<h3 style="font-size: 2rem;">Penultimate Computer Science Student</h3>
+		</div>
 
-			<section class="normal_section">
-				<p>Hello World<br>Hello World<br>Hello World<br>Hello World<br>Hello World<br>Hello World<br>Hello World<br>Hello World<br>
-				</p>
-			</section>
+		<!--Section Shortcuts-->
+		<div class="bot_container">
+			<div class="section_shortcuts">
+				<h2 id="about_me_but" class="underline W_underline" >About Me</h2>
+				<h2 id="projects_but" class="underline W_underline" >Projects</h2>
+				<h2 class="underline W_underline" >Skills</h2>
+				<h2 class="underline W_underline" >Contact Me</h2>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- <div class="blur_div"></div> -->
+
+	<!--Section2: About Me-->
+	<div id="about_me" class="normal_section">
+
+		<h1 class="section_title">About Me</h1>
+
+		<!--About Me Text and Profile Picture-->
+		<div class="horz_wrapper"> 
+			
+			<div class="about_me_text">
+				<h2 style="font-size: calc(1rem + 1vw);">Hello! I'm Will.</h2>
+				<p style="font-size: calc(.5rem + .75vw);">I am a computer science student in the 
+					advanced course  at the University of Adelaide, who has developed a passion for
+					programming over the past few years. This affinity has been nurtured by the 
+					problem-solving challenges and boundless creativity software development offers.
+					<br><br>
+					Currently in my pen-ultimate year, I am super excited to continue learning and 
+					creating in my computer science career and hope to one day be involved with an 
+					innovative product which has a meaningful impact on society.
+					<br><br>
+					Outside of programming I love pretty much anything to do with the outdoors, from 
+					surfing to mountain biking, if it involves nature, I’m in! I believe these diverse 
+					interests keep me well rounded, as well as ensure I remain a dynamic learner, 
+					always eager to create, innovate, and explore new horizons, both in computer 
+					science and life.</p>
+			</div> 
+
+			<img class="me" src="src/images/formal.png" alt="me">
+
+		</div>
+
+		<!--About Me Images-->
+		<div class="horz_wrapper img_wrapper">
+			<img class="mtb abt_me_img" src="src/images/windys4th.png" alt="me mountain biking">
+			<img class="snow abt_me_img" src="src/images/falls2.png" alt="me at falls creek">
+			<img class="river abt_me_img" src="src/images/murray.png" alt="me wakeboarding">
+		</div>
+
+	</div>
+
+	<!-- <hr style="height: 1px"> -->
+
+	<!--Section3: Projects-->
+	<div id="projects" class="normal_section">
+
+		<h1 class="section_title">Projects</h1>
+
+	</div>
 
 
-        <script src="src/app.js"></script>
-    </body>
+<!--Linking JavaScript-->
+<script src="src/app.js"></script>
+</body>
 </html>

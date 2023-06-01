@@ -1,6 +1,6 @@
 //change logo on click
 window.addEventListener('DOMContentLoaded', (event) => {
-  const logo = document.getElementById('logoImage');
+  const logo = document.getElementById('logo');
 
   logo.addEventListener('click', function() {
     
@@ -14,3 +14,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+//scrolling to sections
+document.getElementById('about_me_but').addEventListener('click', function() {
+  document.getElementById('about_me').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('projects_but').addEventListener('click', function() {
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+});
