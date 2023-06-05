@@ -34,7 +34,7 @@
 			<div class="section_shortcuts">
 				<h2 id="about_me_but" class="underline W_underline" >About Me</h2>
 				<h2 id="projects_but" class="underline W_underline" >Projects</h2>
-				<h2 class="underline W_underline" >Skills</h2>
+				<h2 id="skills_but" class="underline W_underline" >Skills</h2>
 				<h2 class="underline W_underline" >Contact Me</h2>
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 	</div>
 
 
-	<!--Divider-->
+	<!--Section Divider-->
 	<div class="block_divider" style="background-color: #202020;">
 		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
 	</div>
@@ -176,8 +176,114 @@
 		</div>
 	</div>
 
+	<!--Section Divider-->
+	<div class="block_divider" style="background-color: #202020;">
+		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
+	</div>
 
-<!--Linking JavaScript-->
-<script src="src/app.js"></script>
+	<!--Section4: Skills-->
+	<div id="skills" class="normal_section" >
+
+		<h1 class="section_title">Skills</h1>
+
+		<p style="width: 80%; font-size: 1.7vw;">
+			During my coding career I've worked on a wide variety of projects and
+			subsequently I've used broad range of programming languages to suit the needs of each project.
+		</p>
+
+		<!-- Pin this div so its always a set distance from the buttom of each page-->
+		<div class="vert_wrapper all_prog_bars">
+
+			<div class="prog_container">
+				<p>C</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 75%; background-color: rgb(71, 130, 255);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>C++</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 92.5%; background-color: rgb(8, 86, 255);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>Matlab</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 75%; background-color: rgb(216, 130, 0);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>Python</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 80%; background-color: rgb(64, 212, 0);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>Dart</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 5%; background-color: rgb(0, 200, 255);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>JavaScript</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 85%; background-color: rgb(213, 213, 0);"></div>
+				</div>
+    	</div>
+
+			<div class="prog_container">
+				<p>HTML / CSS</p>
+				<div class="prog_bar_container">
+					<div class="progress_bar"></div>
+        	<div class="progress_bar overlay" style="width: 80%; background-color: rgb(213, 0, 0);"></div>
+				</div>
+    	</div>
+
+		</div>
+		
+	</div>
+	
+
+
+	<!--JavaScript-->
+	<script>
+		//change logo on click
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const logo = document.getElementById('logo');
+			
+			logo.addEventListener('click', function() {
+				if (logo.src.endsWith('ws.png')) {
+					logo.src = 'src/images/the_one_and_only.png';
+
+					setTimeout(function() {
+						logo.src = 'src/images/ws.png';
+					}, 2000);
+				}
+			});
+		});
+
+		//scrolling to sections
+		document.getElementById('about_me_but').addEventListener('click', function() {
+			document.getElementById('about_me').scrollIntoView({ behavior: 'smooth' });
+		});
+		document.getElementById('projects_but').addEventListener('click', function() {
+			document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+		});
+		document.getElementById('skills_but').addEventListener('click', function() {
+			document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+		});
+
+	</script>
 </body>
 </html>

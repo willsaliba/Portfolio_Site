@@ -214,3 +214,41 @@ h1, h2, h3, body {
   color: rgb(200, 0, 0);
 }
 
+/* Skills */
+
+.all_prog_bars {
+  margin-top: 2vh;
+  width: 100%;
+}
+
+.all_prog_bars p {
+  align-self: flex-start;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: .25em;
+}
+
+.prog_container {
+  margin-bottom: 5vh;
+  width: 80%;
+}
+
+.prog_bar_container {
+  position: relative;
+}
+
+.progress_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1vh;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  border-radius: 100em;
+}
+
+
+
+
+
+
