@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<title>Will Saliba</title>
-	<link rel="shortcut icon" type="x-icon" href="src/images/ws.png">
-	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<link rel="shortcut icon" type="x-icon" href="public/images/ws.png">
+	<link rel="stylesheet" type="text/css" href="public/index.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 		
 		<!--Logo, Resume, Linkedin, Github-->
 		<div class="top_container" >
-			<img id="logo" class="logo" src="src/images/ws.png" alt="WS">
+			<img id="logo" class="logo" src="public/images/ws.png" alt="WS">
 			<nav class="sit_right">
 				<a class="underline" href="#">Resume</a>
 				<a class="underline" href="https://linkedin.com/in/willsaliba1">LinkedIn</a>
@@ -24,9 +24,9 @@
 		<!--Name and Sub Heading-->
 		<div class="mid_container">
 			<div class="cloud">
-				<h1 style="font-size: 7rem;" >WILL SALIBA</h1>
+				<h1 style="font-size: calc(5vh + 5vw);" >WILL SALIBA</h1>
 			</div>
-			<h3 style="font-size: 2rem;">Penultimate Computer Science Student</h3>
+			<h3 style="font-size:  calc(1vh + 1vw);">Penultimate Computer Science Student</h3>
 		</div>
 
 		<!--Section Shortcuts-->
@@ -51,8 +51,8 @@
 		<div class="horz_wrapper"> 
 			
 			<div class="about_me_text" style= "margin-top: 0;">
-				<h2 style="font-size: calc(1rem + 1vw);">Hello! I'm Will.</h2>
-				<p style="font-size: calc(.5rem + .75vw); margin-top: 1vh;">I'm a computer science student in the 
+				<h2 style="font-size: calc(1vh + 1vw);">Hello! I'm Will.</h2>
+				<p class="text">I'm a computer science student in the 
 					advanced course  at the University of Adelaide, who has developed a passion for programming. 
 					This affinity has been nurtured by the problem solving challenges and boundless creativity 
 					software development offers. I'm a member of the Computer Science Club and the Competitive 
@@ -69,15 +69,15 @@
 					science and life.</p>
 			</div> 
 
-			<img class="me" src="src/images/formal.png" alt="me">
+			<img class="me" src="public/images/formal.png" alt="me">
 
 		</div>
 
 		<!--About Me Images-->
 		<div class="horz_wrapper img_wrapper">
-			<img class="mtb abt_me_img" src="src/images/cpc.png" alt="competitive programming">
-			<img class="snow abt_me_img" src="src/images/windys4th.png" alt="me mountain biking">
-			<img class="river abt_me_img" src="src/images/murray.png" alt="me wakeboarding">
+			<img class="mtb abt_me_img" src="public/images/cpc.png" alt="competitive programming">
+			<img class="snow abt_me_img" src="public/images/windys4th.png" alt="me mountain biking">
+			<img class="river abt_me_img" src="public/images/murray.png" alt="me wakeboarding">
 		</div>
 
 	</div>
@@ -96,15 +96,17 @@
 			<!--E-Horses-->
 			<div class="vert_wrapper">
 
-				<div class="proj" style="background-image: url('src/images/ehorse.jpeg')">
+				<div class="proj" style="background-image: url('public/images/ehorse.jpeg')">
 
 					<h2 >E Horses</h2>
-					<p style="font-size: 1.2vw; margin: 1em; text-align: center; align-self: center;">
-						This project, written in C++, is a terminal game where users can enter their horse in a race against bot horses. 
-						With multiple racining divisions, winning races earns the user XP and in-game money which they can then use to buy new horses 
-						or upgrade, breed and apply boosts to their exisiting horses. This involved Object Oriented Programming, Polymorphism, Inherticance 
-						and Overloading.
-					</p>
+					<div class="vert_wrapper" style="height: 87%;">
+						<p>
+							This project, written in C++, is a terminal game where users can enter their horse in a race against bot horses. 
+							With multiple racining divisions, winning races earns the user XP and in-game money which they can then use to buy new horses 
+							or upgrade, breed and apply boosts to their exisiting horses. This involved Object Oriented Programming, Polymorphism, Inherticance 
+							and Overloading.
+						</p>
+					</div>
 
 				</div>
 
@@ -119,16 +121,20 @@
 			<!--Clubs-OverFlow-->
 			<div class="vert_wrapper">
 
-				<div class="proj" style="background-image: url('src/images/clubsOverflow.jpeg')">
+				<div class="proj" style="background-image: url('public/images/clubsOverflow.jpeg')">
+					
 					
 					<h2>Clubs Overflow</h2>
-					<p style="font-size: 1.2vw; margin: 1em; text-align: center; align-self: center;">
-						This web application is a social media site focused on allowing users to join and interact with clubs. 
-						The site contains 16 different pages allowing users to create and modify accounts, scroll through a
-						 homepage as well as create, modify and search for clubs and club events. The application utilises
-						  client side Vue and an Express Server to enable server-side development via HTTP routes.
-					</p>
+					<div class="vert_wrapper" style="height: 87%;">
+						<p>
+							This web application is a social media site focused on allowing users to join and interact with clubs. 
+							The site contains 16 different pages allowing users to create and modify accounts, scroll through a
+							homepage as well as create, modify and search for clubs and club events. The application utilises
+								client side Vue and an Express Server to enable server-side development via HTTP routes.
+						</p>
+					</div>
 				</div>
+				
 
 				<div class="proj_button">
 					<a href="https://drive.google.com/file/d/1c9dYMblKnPDirLd66atHL7DcFTrv7BZN/view" class="underline R_underline">
@@ -141,11 +147,13 @@
 			<!--Trips+-->
 			<div class="vert_wrapper">
 
-				<div class="proj" style="background-image: url('src/images/tripsPlus.jpeg')">
+				<div class="proj" style="background-image: url('public/images/tripsPlus.jpeg')">
 					<h2>Trips+</h2>
-					<p style="font-size: 1.2vw; margin: 1em; text-align: center; align-self: center;">
-						coming soon...
-					</p>
+					<div class="vert_wrapper" style="height: 87%;">
+						<p>
+							COMING SOON
+						</p>
+					</div>
 				</div>
 
 				<div class="proj_button">
@@ -161,9 +169,11 @@
 
 				<div class="proj">
 					<h2>Tap Out</h2>
-					<p style="font-size: 1.2vw; margin: 1em; text-align: center; align-self: center;">
-						coming soon...
-					</p>
+					<div class="vert_wrapper" style="height: 87%;">
+						<p>
+							COMING SOON
+						</p>
+					</div>
 				</div>
 
 				<div class="proj_button">
@@ -267,10 +277,10 @@
 			
 			logo.addEventListener('click', function() {
 				if (logo.src.endsWith('ws.png')) {
-					logo.src = 'src/images/the_one_and_only.jpeg';
+					logo.src = 'public/images/the_one_and_only.jpeg';
 
 					setTimeout(function() {
-						logo.src = 'src/images/ws.png';
+						logo.src = 'public/images/ws.png';
 					}, 2000);
 				}
 			});
