@@ -157,7 +157,7 @@ h1, h2, h3, body {
 }
 
 .text {
-  font-size: calc(.85vh + .85vw);
+  font-size: calc(.75vh + .8vw);
   margin-top: 1vh;
 }
 
@@ -261,8 +261,16 @@ h1, h2, h3, body {
   border-radius: 100em;
 }
 
-
-
+/* Contact Me */
+.contact_section {
+  background-color: #202020;
+  height: 20vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(1vh + 1vw); 
+}
 
 
 

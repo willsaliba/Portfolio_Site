@@ -35,12 +35,11 @@
 				<h2 id="about_me_but" class="underline W_underline" >About Me</h2>
 				<h2 id="projects_but" class="underline W_underline" >Projects</h2>
 				<h2 id="skills_but" class="underline W_underline" >Skills</h2>
-				<h2 class="underline W_underline" >Contact Me</h2>
+				<h2 id="contact_but" class="underline W_underline" >Contact Me</h2>
 			</div>
 		</div>
 		
 	</div>
-
 
 	<!--Section2: About Me-->
 	<div id="about_me" class="normal_section">
@@ -48,14 +47,16 @@
 		<h1 class="section_title">About Me</h1>
 
 		<!--About Me Text and Profile Picture-->
-		<div class="horz_wrapper"> 
+		<div class="horz_wrapper" style="height: 52%;"> 
 			
 			<div class="about_me_text" style= "margin-top: 0;">
 				<h2 style="font-size: calc(1vh + 1vw);">Hello! I'm Will.</h2>
 				<p class="text">I'm a computer science student in the 
 					advanced course  at the University of Adelaide, who has developed a passion for programming. 
 					This affinity has been nurtured by the problem solving challenges and boundless creativity 
-					software development offers. I'm a member of the Computer Science Club and the Competitive 
+					software development offers. 
+					<br><br>
+					I'm a member of the Computer Science Club and the Competitive 
 					Programming Club, which involves monthly tournaments where teams compete to solve the most algorithims.
 					<br><br>
 					Currently in my penultimate year, I'm super excited to continue learning and 
@@ -81,7 +82,6 @@
 		</div>
 
 	</div>
-
 	<!--Section Divider-->
 	<div class="block_divider" style="background-color: #202020;">
 		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
@@ -187,7 +187,6 @@
 
 		</div>
 	</div>
-
 	<!--Section Divider-->
 	<div class="block_divider" style="background-color: #202020;">
 		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
@@ -266,14 +265,49 @@
 		</div>
 		
 	</div>
-	
+	<!--Section Divider-->
+	<div class="block_divider" style="background-color: #202020;">
+		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
+	</div>
 
+	<!--Section4: Skills-->
+	<div id="contact" class="contact_section" >
+
+		<!--Logo and Title-->
+		<div class="horz_wrapper" style="width: 40%">
+			<img id="logo2" class="logo" src="public/images/ws.png" alt="WS">
+			<h1 style="font-size: calc(2.3vh + 2.3vw);">Contact Me</h1>
+		</div>
+
+		<!--Contact Options-->
+		<div class="horz_wrapper"  style="width: 40%;"">
+			
+			<div class="vert_wrapper" style="align-items: flex-start;">
+				<p style="margin-right: 2vw;"><b>Email:</b></p>
+				<p style="margin-right: 2vw;"><b>LinkedIn:</b></p>
+			</div>
+			
+			<div class="vert_wrapper" style="align-items: flex-start;">
+				<p><a class="underline W_underline" style="color: white;" href="mailto:salibawill@gmail.com">
+					salibawill@gmail.com
+				</a></p>
+				<p><a class="underline W_underline" style="color: white;" href="https://linkedin.com/in/willsaliba1">
+					https://linkedin.com/in/willsaliba1
+				</a></p>
+			</div>
+			
+		</div>
+		
+	</div>
 
 	<!--JavaScript-->
 	<script>
 		//change logo on click
 		window.addEventListener('DOMContentLoaded', (event) => {
-			const logo = document.getElementById('logo');
+		const logos = ['logo', 'logo2'];
+		
+		logos.forEach(id => {
+			const logo = document.getElementById(id);
 			
 			logo.addEventListener('click', function() {
 				if (logo.src.endsWith('ws.png')) {
@@ -285,6 +319,8 @@
 				}
 			});
 		});
+	});
+
 
 		//scrolling to sections
 		document.getElementById('about_me_but').addEventListener('click', function() {
@@ -295,6 +331,9 @@
 		});
 		document.getElementById('skills_but').addEventListener('click', function() {
 			document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+		});
+		document.getElementById('contact_but').addEventListener('click', function() {
+			document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 		});
 
 	</script>
