@@ -151,14 +151,14 @@
 					<h2>Trips+</h2>
 					<div class="vert_wrapper" style="height: 87%;">
 						<p>
-							COMING SOON
+							In Development
 						</p>
 					</div>
 				</div>
 
 				<div class="proj_button">
-					<a href="#" class="underline R_underline">
-						In Development
+					<a href="https://github.com/willsaliba/TripsPlus1.3" class="underline R_underline">
+						View Project
 					</a>
 				</div>
 
@@ -267,6 +267,7 @@
 		</div>
 		
 	</div>
+
 	<!--Section Divider-->
 	<div class="block_divider" style="background-color: #202020;">
 		<hr style="border: none; height: 2px; background: rgb(150, 0, 0); width: 95%;">
@@ -304,25 +305,25 @@
 
 	<!--JavaScript-->
 	<script>
+
 		//change logo on click
 		window.addEventListener('DOMContentLoaded', (event) => {
-		const logos = ['logo', 'logo2'];
-		
-		logos.forEach(id => {
-			const logo = document.getElementById(id);
+			const logos = ['logo', 'logo2'];
 			
-			logo.addEventListener('click', function() {
-				if (logo.src.endsWith('ws.png')) {
-					logo.src = 'public/images/the_one_and_only.jpeg';
+			logos.forEach(id => {
+				const logo = document.getElementById(id);
+				
+				logo.addEventListener('click', function() {
+					if (logo.src.endsWith('ws.png')) {
+						logo.src = 'public/images/the_one_and_only.jpeg';
 
-					setTimeout(function() {
-						logo.src = 'public/images/ws.png';
-					}, 2000);
-				}
+						setTimeout(function() {
+							logo.src = 'public/images/ws.png';
+						}, 2000);
+					}
+				});
 			});
 		});
-	});
-
 
 		//scrolling to sections
 		document.getElementById('about_me_but').addEventListener('click', function() {
