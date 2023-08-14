@@ -40,10 +40,9 @@ h1, h2, h3, body {
 .vert_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around; 
 }
-
 
 /* Animated Underline */
 *,
@@ -184,7 +183,6 @@ h1, h2, h3, body {
 }
 
 /* Project */
-
 .proj {
   display: flex;
   flex-direction: column;
@@ -229,7 +227,6 @@ h1, h2, h3, body {
 }
 
 /* Skills */
-
 .all_prog_bars {
   margin-top: 2vh;
   width: 100%;
@@ -271,6 +268,3 @@ h1, h2, h3, body {
   justify-content: space-evenly;
   font-size: calc(1vh + 1vw); 
 }
-
-
-
